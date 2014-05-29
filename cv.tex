@@ -1,0 +1,189 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Chris}
+\familyname{Orchard}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{177B Brook Drive}{London SE11 4TG}{England}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\mobile{+44~(7868)~525~602}                          % optional, remove / comment the line if not wanted
+%\phone{+2~(345)~678~901}                           % optional, remove / comment the line if not wanted
+%\fax{+3~(456)~789~012}                             % optional, remove / comment the line if not wanted
+\email{chris.s.orchard@gmail.co.uk}                               % optional, remove / comment the line if not wanted
+\homepage{csor.ch}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\begin{minipage}{\linewidth}
+\section{Education}
+\cventry{2009--2013}{MEng Computer Science with Mobile and Secure Systems}{First with Honours}{University of Southampton}{}{}
+\cventry{2006--2008}{A Level}{Poole Grammar School}{Dorset}{}{
+\begin{itemize}
+  \item A2 Maths, A
+  \item A2 Computing: A
+  \item A2 Electronics: B
+  \item A2 Physics: B
+  \item AS Further Maths: B
+\end{itemize}
+}
+\cventry{2002--2006}{10 GCSEs - grade A*-A including  French - A* and Geography - A*}{Poole Grammar School}{Dorset}{}{}
+\end{minipage}
+
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\begin{minipage}{\linewidth}
+\vspace{3ex}
+\section{Experience}
+\cventry{Sept 2013--Date}{Delivery Graduate}{BAE Systems Applied Intelligence}{London \& Guildford}{}{
+things I did:
+arch + design stuff
+delivering things (making the code)
+managing other people (a bit?)
+working across two sites liaising between split teams
+prototyping things, elaboration, design based on risk
+}
+\cventry{June 2012--Sept 2012}{Consultant}{BAE Systems Detica}{London}{}{
+lead a small team of interns delivering a thing (ESB) for a prototype for
+another thing. Took responsibility for elaboration, division of
+responsibilities and day to day working.
+}
+\cventry{June 2011--Sept 2011}{Consultant}{Detica}{London}{}{
+During a 10 week internship, I worked in a small team to implement a Java based
+automated testing tool for web services. We successfully completed the tool to
+time, delivering and presenting to managers at the end of the placement.
+}
+\cventry{June 2010--Sept 2010}{Junior Systems Engineer}{BAE Systems}{Christchurch Dorset}{}{
+After my first year of university, I returned to the project I worked on during
+my gap year, with responsibilities including: commissioning parts of the
+project, requirements management, and writing software tools to optimise these
+tasks.
+}
+\cventry{Sept 2008--Oct 2009}{Test\/Integration Engineer}{BAE Systems}{Christchurch Dorset}{}{
+Whilst working for BAE, my responsibilities were to build a low-level high-speed
+IP traffic generator and a radio link emulator for a tactical network. During
+the course of my work I gained much experience in the C programming language,
+working in and around the Linux kernel and its networking subsystems. I
+furthered my knowledge of IP networking, with respect to IPSec and the RIP
+(Routing Information Protocol) and EIGRP (Enhanced Interior Gateway Routing
+Protocol) routing protocols. I worked as part of a small unit within a much
+larger team of approximately 150 people. This gave me in depth experience of
+working in a team; from writing technical documentation explaining the work I
+did enabling future maintenance, to aiding members of the larger team as a whole
+in more general problem solving and integration activities.
+}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\vspace{3ex}
+\section{Programming Languages}
+\cvitemwithcomment{Java}{Competent}{}
+\cvitemwithcomment{C\# (.Net Framework)}{Competent}{Including use of jQuery, Backbone.js, Ember.js and Angular.js.}
+\cvitemwithcomment{C}{Competent}{Including kernel modules}
+\cvitemwithcomment{C++}{Some Experience}{Simple allocator implementation, OpenGL graphics project.}
+\cvitemwithcomment{Python}{Some Experience}{Simple web applications, security patches to existing systems.}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\vspace{3ex}
+\section{Computer skills}
+\cvitem{Source Control}{Git, GitHub, Subversion and \href{https://en.wikipedia.org/wiki/CMVC}{CMVC}.}
+\cvitem{Testing}{Automated test tools such as nose and JUnit, Continuous Integration tools such as Travis-CI.}
+\cvitem{Web Technologies}{HTML and HTML5 technologies such as WebSockets, Semantic Web technologies such as RDF and SPARQL.}
+\cvitem{Frameworks}{Django, Flask and Rails.}
+\cvitem{Distributed Computing}{Celery, RabbitMQ.}
+\cvitem{Databases}{MySQL/MariaDB, PostgreSQL and Redis.}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\vspace{3ex}
+\section{Interests}
+\cvitem{Hobby Computing}{Written my own ``home-brew'' code for the Nintendo Wii.}
+\cvitem{Scouting}{Since 1998, including in Summer 2009 a mountaineering trip to Kandersteg, Switzerland, where I achieved the successful ascent of Wildstrubel (height 3,243 m), as part of a two day expedition.}
+\cvitem{Ice Skating}{Figure Skating, UK Skate Gold award.}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\vspace{3ex}
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{IBM Internships}{
+    Jon Short\\
+    IBM Storage Subsystems Group, Hursley\\
+    SAN Volume Controller, Regression Test Team Leader\\
+    [Contact Details on Request]
+  }
+  \cvcolumn{University of Southampton Internship}{
+    \href{http://id.ecs.soton.ac.uk/person/446}{Dr Tim Chown}\\
+    ECS, Faculty of Physical and Applied Sciences\\
+    University of Southampton\\
+    \href{mailto:tjc@ecs.soton.ac.uk}{tjc@ecs.soton.ac.uk}
+  }
+\end{cvcolumns}
+\end{minipage}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
