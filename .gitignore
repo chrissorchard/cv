@@ -90,3 +90,11 @@ sympy-plots-for-*.tex/
 
 #vim
 *.swp
+
+#more latex
+*.make
+*.d
+
+#output
+cv.pdf
+picture.jpg
