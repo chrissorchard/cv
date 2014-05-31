@@ -94,6 +94,7 @@ sympy-plots-for-*.tex/
 #more latex
 *.make
 *.d
+*.temp
 
 #output
 cv.pdf
