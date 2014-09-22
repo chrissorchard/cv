@@ -14,6 +14,8 @@
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
+\usepackage{multicol}
+
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
@@ -110,15 +112,19 @@ documentation for my work.
 
 \begin{minipage}{\linewidth}
 \section{Education}
-\cventry{2009--2013}{MEng Computer Science with Mobile and Secure Systems}{First with Honours}{University of Southampton}{}{}
+\cventry{2009--2013}{MEng Computer Science with Mobile and Secure Systems}{First with Honours}{University of Southampton}{}{
+Some words on what I did in my degree, the important parts.
+}
 \cventry{2006--2008}{A Level}{Poole Grammar School}{Dorset}{}{
+\begin{multicols}{2}
 \begin{itemize}
-  \item A2 Maths, A
+  \item A2 Maths: A
   \item A2 Computing: A
   \item A2 Electronics: B
   \item A2 Physics: B
   \item AS Further Maths: B
 \end{itemize}
+\end{multicols}
 }
 \cventry{2002--2006}{10 GCSEs - grade A*-A including  French - A* and Geography - A*}{Poole Grammar School}{Dorset}{}{}
 \end{minipage}
